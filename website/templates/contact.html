@@ -1,2 +1,71 @@
-<!-- your html code here -->
-<p>Hello, I'm contact.html</p>
+<style>
+    .contact {
+        color: white;
+    }
+    .form {
+        padding: 50px;
+        border: 1px solid rgb(117, 77, 0);
+        border-radius: 10px;
+        background-color: rgb(11, 59, 53);
+    }
+    .inputs {
+        background-color: rgb(76, 107, 98);
+        border-radius: 20px;
+    }
+    .boton {
+        border-radius: 20px;
+    }
+    .contacto {
+        display: inline-block;
+        border: 1px solid rgb(117, 77, 0);
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+
+<div class="contact container-fluid px-0">
+    <div class="row d-flex justify-content-center">
+        <!-- left -->
+        <div class="col-3">
+            <h6 class="contacto">Contato</h6>
+            <h2>Como <span class="text-warning">podemos ajudar</span> na sua defesa?</h2>
+            <p class="text-start" style="text-align: justify;">
+                Para informações ou contato com nossos profissionais, utilize o formulário abaixo, especificando no campo ASSUNTO o tipo de solicitacao. Retornaremos o mais oreve possivel.
+            </p>
+            <img src="https://raw.githubusercontent.com/MarioDR25/exercise-collaborative-html-website/8ea7cd1f6ccac87fde1e546cee6537455f9aeb11/website/assets/img/mazo-de-juez.png" alt="mazo de juez" style="filter: brightness(0.5);">
+        </div>
+        <!-- space -->
+         <div class="col-2"></div>
+        <!-- rigth -->
+        <div class="col-3">
+            <form class="form d-flex flex-column gap-3">
+                <div class="text-center">
+                    <h2>Converse conosco!</h2>
+                    <p>Preencha o formulario e entrarei em contato o mais rápido possível para entender sua situação.</p>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                    <label for="name">Nome Completo: *</label>
+                    <input class="inputs p-2" type="text" id="name" placeholder="Er Caique de Souza Boto" required>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex flex-column gap-1">
+                        <label for="phone">Telefone: *</label>
+                        <input class="inputs p-2" type="number" id="phone" placeholder="000-000-000" required>
+                    </div>
+                    <div class="col-6 d-flex flex-column gap-1">
+                        <label for="email">E-mail: *</label>
+                        <input class="inputs p-2" type="email" id="email" placeholder="ejem@gmail.com" required>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                    <label for="message">Menssagem: *</label>
+                    <textarea class="inputs p-2" id="message" rows="6" placeholder="Descreva brevemente a sua mensagem" required></textarea>
+                </div>
+                <div class="d-flex flex-column">
+                    <button type="submit" class="boton btn btn-warning text-white">Enviar mensagem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
